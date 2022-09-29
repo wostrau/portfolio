@@ -1,0 +1,25 @@
+.mainBlock {
+    height: 100vh;
+    background-color: #e5b9b9;
+}
+
+.container {
+    border: 1px solid;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.greeting {
+    width: 400px;
+    background-color: #f7f7f7;
+}
+
+.picture {
+    width: 400px;
+    height: 530px;
+    background-color: #f7f7f7;
+}
