@@ -13,3 +13,10 @@
     height: 530px;
     background-color: #f7f7f7;
 }
+
+@media screen and (max-width: 1003px) {
+    .picture {
+        display: flex;
+        align-items: center;
+    }
+}

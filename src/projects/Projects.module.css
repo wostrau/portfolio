@@ -1,6 +1,6 @@
 .projectsBlock {
     height: 100vh;
-    background-color: #f4d7ff;
+    background-color: #343a40;
 }
 
 .projectsContainer {
@@ -9,14 +9,18 @@
     flex-wrap: nowrap;
 }
 
-.title {
-    background-color: #f7f7f7;
-}
-
 .projects {
     border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1129px) {
+    .projects {
+        justify-content: center;
+    }
 }

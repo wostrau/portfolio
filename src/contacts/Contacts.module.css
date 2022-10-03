@@ -27,3 +27,9 @@
     padding: 10px 20px;
     background-color: #f7f7f7;
 }
+
+@media screen and (max-width: 640px) {
+    .contactsForm {
+        width: 80%;
+    }
+}
