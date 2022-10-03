@@ -7,7 +7,7 @@ import img4project from '../assets/image/forProject.png';
 
 const Projects = () => {
     const todolistImg = {
-      backgroundImage: 'url(' + img4project + ')'
+        backgroundImage: `url(${img4project})`
     };
 
     return (
@@ -16,7 +16,8 @@ const Projects = () => {
                 <Title title={'My Projects'}/>
                 <div className={style.projects}>
                     <Project title={'Todolist'} style={todolistImg} description={'bla-bla'}/>
-                    <Project title={'Social Network'} style={todolistImg} description={'bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla'}/>
+                    <Project title={'Social Network'} style={todolistImg}
+                             description={'bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla bla-bla'}/>
                 </div>
             </div>
         </div>

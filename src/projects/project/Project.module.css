@@ -11,11 +11,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    position: relative;
+}
+
+.image::before {
+    position: absolute;
+    content: '';
+    opacity: 0.4;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .viewBtn {
     background-color: #f7f7f7;
     padding: 10px 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .projectTitle {
