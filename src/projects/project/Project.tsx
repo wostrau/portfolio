@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Project.module.css';
+import style from './Project.module.scss';
 
 type ProjectPropsType = {
     title: string
@@ -15,7 +15,7 @@ const Project = (props: ProjectPropsType) => {
     return (
         <div className={style.project}>
             <div className={style.image} style={props.style}>
-                <a className={style.viewBtn}>Show details</a>
+                <a className={style.viewBtn}>SEE MORE</a>
             </div>
             <div className={style.projectInfo}>
                 <h3 className={style.projectTitle}>{props.title}</h3>
