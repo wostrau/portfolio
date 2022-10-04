@@ -1,4 +1,5 @@
 @import './src/common/styles/sass/variables';
+@import './src/common/styles/sass/mixins';
 
 .project {
   width: 450px;
@@ -39,20 +40,14 @@
     padding: 25px 20px;
 
     .projectTitle {
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 16px;
+      @include text($titleFontFamily, 16px, 1.2);
       letter-spacing: 1px;
       margin: 0 0 5px;
-      line-height: 1.2;
-      color: $textColor;
     }
 
     .description {
-      font-family: 'Poppins', sans-serif;
+      @include text($textFontFamily, 12px, 1.8);
       font-weight: 400;
-      font-size: 12px;
-      line-height: 1.8;
-      color: $textColor;
     }
   }
 }
