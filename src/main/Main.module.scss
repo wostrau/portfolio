@@ -5,6 +5,14 @@
   min-height: 100vh;
   @include flex(row, center, center, nowrap);
   padding: 100px 0;
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+  }
   .container {
     @include container();
     @include flex(row, space-around, center, wrap);
