@@ -1,29 +1,25 @@
 @import './src/common/styles/sass/variables';
+@import './src/common/styles/sass/mixins';
 
 .title {
   margin: 0 0 30px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  font-size: 36px;
-  color: $textColor;
+  @include text($titleFontFamily, 36px, 1.2, 300);
   text-transform: capitalize;
-  line-height: 1.2;
   letter-spacing: 5px;
   position: relative;
-
+  text-align: center;
+  h2 {
+    margin: 0;
+  }
   &::before {
     content: '';
     position: absolute;
     background-color: $primaryColor;
-    height: 3px;
+    height: 1px;
     width: 55px;
     bottom: -30px;
     left: 50%;
     transform: translate(-50%, 50%);
-  }
-
-  .title h2 {
-    margin: 0;
   }
 }
 
