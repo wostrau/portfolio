@@ -1,14 +1,12 @@
 import React from 'react';
 import style from './Header.module.scss';
-import Navbar from './navbar/Navbar';
+import {Navbar} from './navbar/Navbar';
+import {BurgerNavbar} from './burgerNavbar/BurgerNavbar';
 
-
-const Header = () => {
+export const Header = () => {
     return (
         <div className={style.header}>
-            <Navbar/>
+            <BurgerNavbar/>
         </div>
     );
 };
-
-export default Header;

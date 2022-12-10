@@ -1,9 +1,10 @@
 import React from 'react';
 import style from './Main.module.scss';
-import Particles from 'react-particles-js';
+import Particles from 'react-tsparticles';
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
+import Tilt from 'react-parallax-tilt';
 
 const particlesOptions = {
     particles: {
@@ -19,7 +20,10 @@ const particlesOptions = {
 
 export const Main = () => {
     return (
-        <div className={style.mainBlock}>
+        <div
+            id="Main"
+            className={style.mainBlock}
+        >
             <Particles
                 className={style.particles}
                 params={particlesOptions}
@@ -31,12 +35,14 @@ export const Main = () => {
                         <span>I am Aliaksandr<span>Astrautsou</span></span>
                         {/*<h1>frontend developer</h1>*/}
                         <ReactTypingEffect
-                            text='frontend developer'
+                            text="frontend developer"
                         />
                     </div>
-                    <div className={style.picture}>
-                        <div className={style.image}></div>
-                    </div>
+                    <Tilt>ya
+                        <div className={style.picture}>
+                            <div className={style.image}></div>
+                        </div>
+                    </Tilt>
                 </div>
             </Fade>
         </div>

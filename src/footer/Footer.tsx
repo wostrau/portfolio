@@ -1,8 +1,9 @@
 import React from 'react';
 import style from './Footer.module.scss';
 import Title from '../common/components/title/Title';
+import img4project from '../assets/image/forProject.png';
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <div className={style.footer}>
             <div className={style.container}>
@@ -10,22 +11,22 @@ const Footer = () => {
                 <div className={style.socialIcons}>
                     <div className={style.socialIcon}>
                         <a href="">
-                            <img src={telegramIcon} alt=""/>
+                            <img src={img4project} alt=""/>
                         </a>
                     </div>
                     <div className={style.socialIcon}>
                         <a href="">
-                            <img src={linkedinIcon} alt=""/>
+                            <img src={img4project} alt=""/>
                         </a>
                     </div>
                     <div className={style.socialIcon}>
                         <a href="">
-                            <img src={githubIcon} alt=""/>
+                            <img src={img4project} alt=""/>
                         </a>
                     </div>
                     <div className={style.socialIcon}>
                         <a href="">
-                            <img src={instagramIcon} alt=""/>
+                            <img src={img4project} alt=""/>
                         </a>
                     </div>
                 </div>
@@ -34,5 +35,3 @@ const Footer = () => {
         </div>
     );
 };
-
-export default Footer;

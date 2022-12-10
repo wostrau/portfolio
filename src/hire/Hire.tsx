@@ -3,7 +3,7 @@ import styleContainer from '../common/styles/Container.module.css';
 import style from './Hire.module.css';
 import Title from '../common/components/title/Title';
 
-const Hire = () => {
+export const Hire = () => {
     return (
         <div className={style.hireBlock}>
             <div className={`${styleContainer.container} ${style.hireContainer}`}>
@@ -13,5 +13,3 @@ const Hire = () => {
         </div>
     );
 };
-
-export default Hire;

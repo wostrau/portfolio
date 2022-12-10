@@ -4,11 +4,7 @@ import style from './Project.module.scss';
 type ProjectPropsType = {
     title: string
     description: string
-    style: ImgType
-}
-
-type ImgType = {
-    backgroundImage: string
+    style: { backgroundImage: string }
 }
 
 const Project = (props: ProjectPropsType) => {

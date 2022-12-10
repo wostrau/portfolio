@@ -4,9 +4,12 @@ import styleContainer from '../common/styles/Container.module.css';
 import Skill from './skill/Skill';
 import Title from '../common/components/title/Title';
 
-const Skills = () => {
+export const Skills = () => {
     return (
-        <div className={style.skillsBlock}>
+        <div
+            id="Skills"
+            className={style.skillsBlock}
+        >
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title title={'My Skills'}/>
                 <div className={style.skills}>
@@ -31,5 +34,3 @@ const Skills = () => {
         </div>
     );
 };
-
-export default Skills;
